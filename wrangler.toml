@@ -1,0 +1,10 @@
+[build]
+command = "npm run build"
+publish = "build"
+
+[site]
+bucket = "./build"
+entry-point = "."
+
+[build.upload]
+format = "service-worker" 

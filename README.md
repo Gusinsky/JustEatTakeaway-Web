@@ -41,6 +41,8 @@ The application will be available at `http://localhost:3000` in development mode
 - `public/` - Static files
   - `index.html` - HTML template
 - `package.json` - Project dependencies and scripts
+- `_worker.js` - Cloudflare Worker for routing
+- `wrangler.toml` - Cloudflare Pages configuration
 
 ## Technologies Used
 
@@ -48,7 +50,36 @@ The application will be available at `http://localhost:3000` in development mode
 - Material-UI
 - Emotion (for styled components)
 - React Scripts (for build configuration)
+- Cloudflare Pages (for deployment)
 
 ## Deployment
 
-This application is configured for deployment on Cloudflare Pages. The build output in the `build/` directory can be deployed directly to Cloudflare Pages. 
+This application is configured for deployment on Cloudflare Pages. To deploy:
+
+1. Make sure you have the Cloudflare Wrangler CLI installed:
+   ```bash
+   npm install -g wrangler
+   ```
+
+2. Login to your Cloudflare account:
+   ```bash
+   wrangler login
+   ```
+
+3. Deploy to Cloudflare Pages:
+   ```bash
+   wrangler pages deploy build
+   ```
+
+The application will be automatically built and deployed to Cloudflare Pages. The build output in the `build/` directory will be served through Cloudflare's global network.
+
+### Cloudflare Pages Configuration
+
+The project includes:
+- `_worker.js` for handling client-side routing
+- `wrangler.toml` for build and deployment configuration
+
+These files ensure that:
+- All routes are properly handled for the React application
+- Static assets are served correctly
+- The application is built and deployed according to Cloudflare Pages requirements
