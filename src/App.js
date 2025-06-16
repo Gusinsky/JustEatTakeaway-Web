@@ -8,7 +8,6 @@ import {
   CardContent,
   Grid,
   Button,
-  useTheme,
 } from '@mui/material';
 import {
   Restaurant as RestaurantIcon,
@@ -35,8 +34,6 @@ const features = [
 ];
 
 function App() {
-  const theme = useTheme();
-
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{ backgroundColor: 'primary.main' }}>
