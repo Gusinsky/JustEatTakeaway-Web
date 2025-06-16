@@ -1,9 +1,7 @@
 {
   "name": "justeat-takeaway-web",
   "compatibility_date": "2024-01-01",
-  "assets": {
-    "bucket": ".",
-    "include": ["index.html", "styles.css"],
-    "exclude": ["**/*"]
+  "site": {
+    "bucket": "."
   }
 } 
