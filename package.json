@@ -1,0 +1,8 @@
+{
+  "name": "justeat-takeaway-web",
+  "version": "1.0.0",
+  "description": "Static demo site for Just Eat Takeaway",
+  "scripts": {
+    "build": "echo 'No build required'"
+  }
+} 
