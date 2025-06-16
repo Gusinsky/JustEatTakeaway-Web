@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustEat Takeaway Demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">JustEat Takeaway</div>
+            <button class="sign-in-btn">Sign In</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Food Delivery Made Simple</h1>
+            <p>Order your favorite meals from the best restaurants in your area.</p>
+            <button class="cta-button">Order Now</button>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="icon">🍽️</div>
+                <h2>Wide Selection</h2>
+                <p>Choose from thousands of restaurants and cuisines</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🚚</div>
+                <h2>Fast Delivery</h2>
+                <p>Quick and reliable delivery to your doorstep</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">⭐</div>
+                <h2>Top Rated</h2>
+                <p>Only the best restaurants make it to our platform</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> JustEat Takeaway Demo. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html> 
