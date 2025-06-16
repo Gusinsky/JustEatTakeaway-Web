@@ -3,7 +3,14 @@
   "version": "1.0.0",
   "description": "Worker for serving static assets",
   "main": "index.js",
+  "scripts": {
+    "build": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
   "dependencies": {
     "@cloudflare/kv-asset-handler": "^0.3.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
   }
 } 
